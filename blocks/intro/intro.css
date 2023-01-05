@@ -1,0 +1,12 @@
+.intro {
+  margin: 92px 0 0;
+  min-height: 429px;
+  max-width: 690px;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    max-width: 720px;
+  }
+}

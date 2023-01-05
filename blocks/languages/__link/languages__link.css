@@ -1,0 +1,20 @@
+.languages__link {
+  /* для того, чтобы работало height = border */
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  /* высота строки 28px */
+  line-height:  1.17;
+  text-decoration: none;
+  color: #fff;
+  /* корректнее было бы 26, но визуально подходит больше 26,5 */
+  /* параметра служит для регулировки удаленности border от символа*/
+  height: 26.5px;
+}
+
+@media screen and (max-width: 320px) {
+  .languages__link {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
