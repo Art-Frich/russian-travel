@@ -1,7 +1,7 @@
-
-
 /* Стили для всей страницы */
 @import url(../vendor/normalize.css);
+@import url(../blocks/html/html.css);
+@import url(../blocks/html-link/html-link.css);
 @import url(../blocks/body/body.css);
 
 
@@ -14,6 +14,7 @@
 
 
 /* Стили раздела main */
+@import url(../blocks/main/main.css);
 
 /* Блок lead */
 @import url(../blocks/lead/lead.css);
@@ -36,11 +37,26 @@
 @import url(../blocks/photo-grid/__element/photo-grid__element.css);
 
 /* Блок places */
+@import url(../blocks/places/places.css);
+@import url(../blocks/places/__item/places__item.css);
+@import url(../blocks/places/__title/places__title.css);
+@import url(../blocks/places/__nav/places__nav.css);
+@import url(../blocks/places/__link-text/places__link-text.css);
+@import url(../blocks/places/__link/places__link.css);
+@import url(../blocks/places/__picture/places__picture.css);
+@import url(../blocks/places/__main-text/places__main-text.css);
+@import url(../blocks/places/__main-text-element/places__main-text-element.css);
 
+/* Блок cover */
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__blur/cover__blur.css);
+@import url(../blocks/cover/__title/cover__title.css);
+@import url(../blocks/cover/__link/cover__link.css);
+@import url(../blocks/cover/__text/cover__text.css);
 
 
 /* Стили раздела footer */
-
-html {
-  background-color: #E5E5E5;
-}
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__row-links/footer__row-links.css);
+@import url(../blocks/footer/__row-link/footer__row-link.css);
+@import url(../blocks/footer/__author/footer__author.css);

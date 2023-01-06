@@ -1,0 +1,8 @@
+.places__main-text-element {
+  margin: 0;
+}
+
+.places__main-text-element:not(:nth-child(1)) {
+  margin-top: 26px;
+}
+
