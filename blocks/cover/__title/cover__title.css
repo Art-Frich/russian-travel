@@ -2,10 +2,16 @@
   margin: 0;
   max-width: 560px;
   text-align: center;
-  font-style: normal;
-  text-align: center;
-  font-weight: 900;
-  font-size: 72px;
-  line-height: 1.06;
-  z-index: 1;
+}
+
+.cover__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2a2c2f;
+  opacity: 0.3;
+  transition: opacity 0.3s linear;
 }

@@ -70,5 +70,5 @@
   text-rendering: optimizeLegibility;
 
   /* для плавности загрузки и всех незаданных явно изменений */
-  transition: all 0.1s ease-in;
+  transition: all 0.05s ease-in;
 }

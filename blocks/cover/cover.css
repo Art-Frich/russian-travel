@@ -1,15 +1,14 @@
 .cover {
+  grid-area: cover;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 92px auto 0;
-  max-width: 1184px;
   aspect-ratio: 1.6;
   background-image: url(../../images/__background.png);
 }
 
-.cover:hover > .cover__blur {
+.cover:hover > .cover__title::before {
   opacity: 0.8;
 }

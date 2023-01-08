@@ -1,4 +1,5 @@
 .places__title {
+  /* обнуляем отсутпы браузера */
   margin: 0;
   font-style: normal;
   font-weight: 900;

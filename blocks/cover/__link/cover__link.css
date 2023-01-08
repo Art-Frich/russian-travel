@@ -1,4 +1,6 @@
 .cover__link {
+  /* видимо или z-index, или вырывать элемент из потока*/
+  position: relative;
   text-decoration: none;
   font-style: normal;
   font-weight: 900;

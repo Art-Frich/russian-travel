@@ -1,8 +1,7 @@
 .footer {
   grid-area: footer;
-  /* display: flex;
+  display: flex;
+  /* имя Автора 16px против nav 18px, нужно прижать его к низу */
   align-items: flex-end;
   justify-content: space-between;
-  margin: 92px 48px 0;
-  padding-bottom: 24px; */
 }

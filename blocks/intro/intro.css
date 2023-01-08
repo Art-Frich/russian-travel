@@ -1,12 +1,10 @@
 .intro {
-  margin: 92px 0 0 148px;
-  min-height: 429px;
+  grid-area: intro;
   max-width: 690px;
-  align-self: flex-start;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .intro {
     max-width: 720px;
   }
-}
+} */
