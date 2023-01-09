@@ -2,6 +2,12 @@
   grid-area: cover;
 
   position: relative;
+  /* центрирование блока */
+  justify-self: center;
+  align-self: center;
+  /* сочетание свойств отвечает за адаптивность cover*/
+  width: 100%;
+  max-width: 1184px;
 
   display: flex;
   flex-direction: column;

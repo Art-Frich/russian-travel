@@ -43,10 +43,11 @@
   display: grid;
   grid-template-columns: 48px 1fr 48px;
   grid-template-rows: 28px 52px 1fr 18px 24px;
+  /* чтобы работать с cover без извращений, пришлось несколько усложнить структуру и сделать main на всю ширину, а боковые отступы задать внутри main */
   grid-template-areas:
   ". . ."
   ". header ."
-  ". main ."
+  "main main main"
   ". footer ."
   ". . ."; 
 
