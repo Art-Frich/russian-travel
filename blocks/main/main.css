@@ -1,6 +1,7 @@
 :root {
   /* интересный эффект, он получает отрицательные числа, но т.к. grid не может иметь отрицательных значений => он заменяет их на 0, но если задать явно отрицательное число типа "-50px", то он позволит ее вставить в грид, а уже грид заменит на 1fr. */
-  --margin-100: calc((100% - 984px)/2);
+  --margin-left-right-100: calc((100% - 984px)/2);
+  --margin-top: calc(56px - 8*(1184px - 100%)/256);
 }
 
 .main {
@@ -8,7 +9,8 @@
 
   display: grid;
   row-gap: 92px;
-  grid-template-columns: var(--margin-100) 1fr var(--margin-100);
+  /* автоматически добавляет и убирает margin для 1024-1280 */
+  grid-template-columns: var(--margin-left-right-100) 1fr var(--margin-left-right-100);
   grid-template-rows: repeat(auto-fit, minmax(429px, max-content));
   grid-template-areas: 
   ". lead ."
@@ -17,5 +19,5 @@
   ". places ."
   "cover cover cover";
   
-  margin: 56px 0 92px;
+  margin: var(--margin-top) 0 92px;
 }

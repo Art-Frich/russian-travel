@@ -1,9 +1,8 @@
 .languages__link {
   /* для того, чтобы работало height = border */
   display: inline-block;
-  /* корректнее было бы 26, но визуально подходит больше 26,5 */
   /* параметра служит для регулировки удаленности border от символа*/
-  height: 26.5px;
+  height: 27.5px;
   
   font-size: 24px;
   font-weight: 400;
