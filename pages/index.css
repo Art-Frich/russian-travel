@@ -22,6 +22,7 @@
 @import url(../blocks/lead/__subtitle/lead__subtitle.css);
 @import url(../blocks/figure/figure.css);
 @import url(../blocks/figure/__img/figure__img.css);
+@import url(../blocks/figure/__img-overlay/figure__img-overlay.css);
 @import url(../blocks/figure/__figcaption/figure__figcaption.css);
 
 /* Блок intro */

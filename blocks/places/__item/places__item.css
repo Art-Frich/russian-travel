@@ -1,20 +1,30 @@
 :root {
   /* 460 - макс ширина колонки
   20 - на сколько должно уменьшиться окно
-  984 - максимальная ширина окна, которое будет изменяться
+  984 - максимальная ширина окна (начальное значение), которое будет изменяться
   56 - разница между начальным (984) и конечным значением ширины родителя
   далее аналогично*/
-  --width-column1-1024: calc(460px - 20*(984px - 100%)/56);
-  --width-column2-1024: calc(484px - 28*(984px - 100%)/56);
-  --gap-column-1024: calc(40px - 8*(984px - 100%)/56);
+  --width-column1_1280-1024: calc(460px - 20*(984px - 100%)/56);
+  --width-column2_1280-1024: calc(484px - 28*(984px - 100%)/56);
+  --gap-column_1280-1024: calc(40px - 8*(984px - 100%)/56);
+  --width-column1_1024-768: calc(440px - 100*(928px - 100%)/208);
+  --width-column2_1024-768: calc(456px - 104*(928px - 100%)/208);
+  --gap-column_1024-768: calc(32px - 4*(928px - 100%)/208);
 }
 
 .places__item {
   display: grid;
-  grid-template-columns: var(--width-column1-1024) var(--width-column2-1024);
-  gap: 48px var(--gap-column-1024);
+  grid-template-columns: 
+    var(--width-column1_1280-1024) 
+    var(--width-column2_1280-1024);
+  gap: 48px var(--gap-column_1280-1024);
 }
 
-@media screen  {
-  
+@media screen and (max-width: 1024px) {
+  .places__item {
+    grid-template-columns: 
+      var(--width-column1_1024-768)
+      var(--width-column2_1024-768);
+    gap: 48px var(--gap-column_1024-768);
+  }
 }

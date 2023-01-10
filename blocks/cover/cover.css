@@ -23,3 +23,10 @@
 .cover:hover > .cover__title::before {
   opacity: 0.8;
 }
+
+/* костыль, чтобы соответствовало макету, хотя кажется, что дизайнер просто промазал или решил усложнить */
+@media screen and (max-width: 768px) {
+  .cover {
+    margin-top: 2px;
+  }
+}

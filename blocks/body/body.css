@@ -1,10 +1,10 @@
-@font-face {
+/* @font-face {
   font-family: 'Inter';
   src: 
     url(../../vendor/InterWeb/Inter-Light.woff2),
     url(../../vendor/InterWeb/Inter-Light.woff);
   font-weight: 300;
-}
+} */
 
 @font-face {
   font-family: 'Inter';
@@ -71,5 +71,9 @@
   text-rendering: optimizeLegibility;
 
   /* для плавности загрузки и всех незаданных явно изменений */
-  transition: all 0.05s ease-in;
+  transition: all 0.2s ease-in;
 }
+
+/* @media screen and (max-width: 1024) {
+  
+} */

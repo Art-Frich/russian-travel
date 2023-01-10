@@ -2,3 +2,18 @@
   width: 100%;
   aspect-ratio: 16/10;
 }
+
+
+@media screen and (max-width: 827px) {
+  .figure__img {
+    position: absolute;
+    min-width: 768px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* -24 смещение влево
+    767.45 - ширина родителя при 826 px (почему-то media на 827 начинает работать только на 826)
+    720 - конечная ширина окна */
+    left: calc(-24*(767.45px - 100%)/(767.45 - 720));
+  }
+}
