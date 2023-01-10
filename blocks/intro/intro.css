@@ -1,20 +1,6 @@
 .intro {
-<<<<<<< HEAD
-  margin: 92px 148px 0;
-  min-height: 429px;
-  max-width: 690px;
-  align-self: flex-start;
-  transition: margin-left 0.1s linear;
-}
-
-@media screen and (max-width: 1024px) {
-  .intro {
-    margin: 92px 48px 0;
-  }
-=======
   grid-area: intro;
   max-width: 690px;
->>>>>>> feature/grid-main
 }
 
 /* @media screen and (max-width: 768px) {

@@ -3,17 +3,4 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
-  max-width: 984px;
-  margin: 56px auto 0;
 }
-
-@media screen and (max-width: 1024px) {
-  .lead {
-    max-width: 928px;
-    margin-top: 48px;
-  }
-}
-=======
-}
->>>>>>> feature/grid-main
