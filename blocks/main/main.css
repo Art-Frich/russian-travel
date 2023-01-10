@@ -1,3 +1,68 @@
-.main {
+:root {
+  /* интересный эффект, он получает отрицательные числа, но т.к. grid не может иметь отрицательных значений => он заменяет их на 0, но если задать явно отрицательное число типа "-50px", то он позволит ее вставить в грид, а уже грид заменит на 1fr. */
 
+  /* 100 - максимальный размер отступа
+  1024px - ширина окна на которой отступ исчезнет 
+  256 - разность хода ширины блока*/
+  --margin-left-right_100-0: calc(100*(100% - 1024px)/256);
+
+  /* 56 - максимальный верхний отступ
+  8 - уменьшение отступа к 1024px
+  1280 - максимальная ширина блока 
+  256 - разность хода ширины блока
+  далее аналогично*/
+  --margin-top_56-48: calc(56px - 8*(1280px - 100%)/256);
+  --margin-bottom_92-88: calc(92px - 4*(1024px - 100%)/256);
+  --margin-left-right_48-24: calc(48px - 24*(1024px - 100%)/256);
+
+}
+
+.main {
+  grid-area: main;
+
+  display: grid;
+  row-gap: 92px;
+  /* автоматически добавляет и убирает margin для 1024-1280 */
+  grid-template-columns: 
+    48px 
+    var(--margin-left-right_100-0) 
+    1fr 
+    var(--margin-left-right_100-0) 
+    48px;
+  grid-template-rows: repeat(auto-fit, minmax(429px, max-content));
+  grid-template-areas: 
+  ". . lead . ."
+  ". . intro . ."
+  ". photo-grid photo-grid photo-grid ."
+  ". . places . ."
+  "cover cover cover cover cover";
+  
+  margin: var(--margin-top_56-48) 0 92px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    /* ужимаем боковые отступы с 48 до 24 */
+    grid-template-columns: 
+      var(--margin-left-right_48-24) 
+      var(--margin-left-right_100-0) 
+      1fr 
+      var(--margin-left-right_100-0) 
+      var(--margin-left-right_48-24);
+    /* меняем расстояние между footer and main */
+    margin: 48px 0 var(--margin-bottom_92-88);
+  }
+}
+
+/* костыль для более плавной смены */
+@media screen and (max-width: 896px) {
+  .main {
+    row-gap: 90px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    row-gap: 88px;
+  }
 }

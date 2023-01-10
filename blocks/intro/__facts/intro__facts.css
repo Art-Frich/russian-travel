@@ -1,5 +1,6 @@
 .intro__facts {
   margin: 33px 0 0;
+  /* обнулить базовый отступ */
   padding: 0;
   list-style: none;
 }

@@ -1,11 +1,27 @@
 .places {
+  grid-area: places;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 80px;
-  margin: 92px auto 0;
+
   font-style: normal;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.63;
+}
+
+@media screen and (max-width: 896px) {
+  .places {
+    row-gap: 76.5px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    row-gap: 72px;
+    font-size: 16px;
+  }
 }

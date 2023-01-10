@@ -1,4 +1,5 @@
 .intro {
+<<<<<<< HEAD
   margin: 92px 148px 0;
   min-height: 429px;
   max-width: 690px;
@@ -10,11 +11,15 @@
   .intro {
     margin: 92px 48px 0;
   }
+=======
+  grid-area: intro;
+  max-width: 690px;
+>>>>>>> feature/grid-main
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .intro {
     margin: 92px 24px 0;
     max-width: 720px;
   }
-}
+} */

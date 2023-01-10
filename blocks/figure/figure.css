@@ -1,7 +1,7 @@
 .figure {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  max-width: 984px;
   margin: 64px 0 0;
+  /* убрать пробел между элементами */
+  font-size: 0;
+  /* чтобы при игре с абсолютной позицией блок не ужимался по содержимому, которого станет меньше */
+  min-width: 100%;
 }

@@ -1,10 +1,10 @@
-@font-face {
+/* @font-face {
   font-family: 'Inter';
   src: 
     url(../../vendor/InterWeb/Inter-Light.woff2),
     url(../../vendor/InterWeb/Inter-Light.woff);
   font-weight: 300;
-}
+} */
 
 @font-face {
   font-family: 'Inter';
@@ -22,13 +22,13 @@
   font-weight: bold;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Inter';
   src: 
     url(../../vendor/InterWeb/Inter-SemiBold.woff2),
     url(../../vendor/InterWeb/Inter-SemiBold.woff);
   font-weight: 600;
-}
+} */
 
 @font-face {
   font-family: 'Inter';
@@ -39,16 +39,41 @@
 }
 
 .body {
-  /* margin для центрирования */
-  margin: 0 auto;
+  /* упростим работу с отступами и сделаем страничку через grid */
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  grid-template-rows: 28px 52px 1fr 18px 24px;
+  /* чтобы работать с cover без извращений, пришлось несколько усложнить структуру и сделать main на всю ширину, а боковые отступы задать внутри main */
+  grid-template-areas:
+  ". . ."
+  ". header ."
+  "main main main"
+  ". footer ."
+  ". . ."; 
+
+  /* центрирование и максимальный размер */
+  margin: 0 auto 0;
   max-width: 1280px;
+
   background-color: #2a2c2f;
+
+  /* стили для всех шрифтов на страничке. Думаю, это тот случай, где БЭМ допускает общие стили, ведь они характерны конкретно для этого блока этой странички */
   color: #fff;
   font-family: 'Inter', sans-serif;
+
+  /* блок, который ничего не меняет визуально, но делает какую-то магию с 
+  красивыми текстами... */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+
+  /* для плавности загрузки и всех незаданных явно изменений */
+  transition: all 0.2s ease-in;
 }
+
+/* @media screen and (max-width: 1024) {
+  
+} */

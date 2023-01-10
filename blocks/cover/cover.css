@@ -1,15 +1,32 @@
 .cover {
+  grid-area: cover;
+
   position: relative;
+  /* центрирование блока */
+  justify-self: center;
+  align-self: center;
+  /* сочетание свойств отвечает за адаптивность cover*/
+  width: 100%;
+  max-width: 1184px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 92px auto 0;
-  max-width: 1184px;
+
   aspect-ratio: 1.6;
   background-image: url(../../images/__background.png);
+  background-size: cover;
+  background-position: center;
 }
 
-.cover:hover > .cover__blur {
+.cover:hover > .cover__title::before {
   opacity: 0.8;
+}
+
+/* костыль, чтобы соответствовало макету, хотя кажется, что дизайнер просто промазал или решил усложнить */
+@media screen and (max-width: 768px) {
+  .cover {
+    margin-top: 2px;
+  }
 }
