@@ -13,8 +13,9 @@
   далее аналогично*/
   --margin-top_56-48: calc(56px - 8*(1280px - 100%)/256);
   --margin-bottom_92-88: calc(92px - 4*(1024px - 100%)/256);
+  --margin-bottom_88-64: calc(88px - 24*(768px - 100%)/448);
   --margin-left-right_48-24: calc(48px - 24*(1024px - 100%)/256);
-
+  --margin-left-right_24-16: calc(24px - 8*(768px - 100%)/448);
 }
 
 .main {
@@ -64,5 +65,45 @@
 @media screen and (max-width: 768px) {
   .main {
     row-gap: 88px;
+    /* ужимаем боковые отступы с 48 до 24 */
+    grid-template-columns: 
+      var(--margin-left-right_24-16)
+      var(--margin-left-right_100-0) 
+      1fr 
+      var(--margin-left-right_100-0)
+      var(--margin-left-right_24-16);
+    /* меняем расстояние между footer and main */
+    margin: 48px 0 var(--margin-bottom_88-64);
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .main {
+    row-gap: 80px;
+  }
+}
+
+@media screen and (max-width: 639.92px) {
+  .main {
+    grid-template-areas: 
+    ". . lead . ."
+    ". . intro . ."
+    ". photo-grid photo-grid photo-grid ."
+    "places places places places places"
+    "cover cover cover cover cover";
+    /* удивительно, но без этого, происходили фокусы: ширина рассчитывалась по max-content, но ужималась настройками внутри places => расчётная высота блока 5077 (примерно), а фактическая 5177 (залезала на соседний блок). Теперь он будет оперировать и min-content, поэтому подгонит высоту как надо */
+    grid-template-rows: repeat(5, minmax(min-content, max-content));
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .main {
+    row-gap: 72px;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .main {
+    row-gap: 64px;
   }
 }

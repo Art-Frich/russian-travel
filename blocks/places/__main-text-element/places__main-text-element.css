@@ -6,3 +6,8 @@
   margin-top: 26px;
 }
 
+@media screen and (max-width: 768px) {
+  .places__main-text-element:not(:nth-child(1)) {
+    margin-top: 25px;
+  }
+}

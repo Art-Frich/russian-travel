@@ -1,0 +1,5 @@
+@media screen and (max-width: 639.92px) {
+  .places__main-text {
+    grid-area: places__main-text;
+  }
+}

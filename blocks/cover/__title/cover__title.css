@@ -15,3 +15,9 @@
   opacity: 0.3;
   transition: opacity 0.3s linear;
 }
+
+@media screen and (max-width: 320px) {
+  .cover__title {
+    max-width: 250px;
+  }
+}

@@ -20,3 +20,16 @@
     line-height: 1.1;
   }
 }
+
+@media screen and (max-width: 639.92px) {
+  .places__title {
+    grid-area: places__title;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .places__title {
+    font-size: 42px;
+    line-height: 1.09;
+  }
+}

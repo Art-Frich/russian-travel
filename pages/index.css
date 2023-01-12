@@ -7,7 +7,7 @@
 
 /* Стили раздела header */
 @import url(../blocks/header/header.css);
-/* @import url(../blocks/header/__logo/header__logo.css); */
+@import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/languages/languages.css);
 @import url(../blocks/languages/__link/languages__link.css);
 @import url(../blocks/languages/__link/_current/languages__link_current.css);
@@ -45,7 +45,7 @@
 @import url(../blocks/places/__link-text/places__link-text.css);
 @import url(../blocks/places/__link/places__link.css);
 @import url(../blocks/places/__picture/places__picture.css);
-@import url(../blocks/places/__main-text/places__main-text.css); /* пустой блок*/
+@import url(../blocks/places/__main-text/places__main-text.css);
 @import url(../blocks/places/__main-text-element/places__main-text-element.css);
 
 /* Блок cover */

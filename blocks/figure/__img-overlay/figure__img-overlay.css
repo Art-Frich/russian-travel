@@ -4,3 +4,27 @@
   /* минимальная высота = размер, на котором блоку нужно перестать сжиматься */
   min-height: 480px;
 }
+
+@media screen and (max-width: 656px) {
+  .figure__img-overlay {
+    min-height: 410px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .figure__img-overlay {
+    min-height: 340px;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .figure__img-overlay {
+    min-height: 270px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .figure__img-overlay {
+    min-height: 200px;
+  }
+}

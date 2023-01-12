@@ -4,3 +4,9 @@
   justify-content: flex-end;
   align-items: flex-start;
 }
+
+@media screen and (max-width: 639.92px) {
+  .places__nav {
+    grid-area: places__nav;
+  }
+}

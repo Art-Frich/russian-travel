@@ -2,3 +2,9 @@
   width: 100%;
   aspect-ratio: 1/1;
 }
+
+@media screen and (max-width: 639.92px) {
+  .places__picture {
+    grid-area: places__picture;
+  }
+}

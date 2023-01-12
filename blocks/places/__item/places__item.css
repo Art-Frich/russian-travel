@@ -28,3 +28,17 @@
     gap: 48px var(--gap-column_1024-768);
   }
 }
+
+@media screen and (max-width: 639.92px) {
+  .places__item {
+    grid-template-areas: 
+    ". places__title ."
+    ". places__nav ."
+    "places__picture places__picture places__picture"
+    ". places__main-text .";
+
+    grid-template-columns: 16px 1fr 16px;
+    grid-template-rows: repeat(4, minmax(min-content, max-content));
+    gap: 32px 0;
+  }
+}
