@@ -3,7 +3,7 @@
   src: 
     url(../../vendor/InterWeb/Inter-Regular.woff2),
     url(../../vendor/InterWeb/Inter-Regular.woff);
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   src: 
     url(../../vendor/InterWeb/Inter-Bold.woff2),
     url(../../vendor/InterWeb/Inter-Bold.woff);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 @font-face {

@@ -1,6 +1,5 @@
 /* Стили для всей страницы */
 @import url(../vendor/normalize.css);
-@import url(../blocks/html/html.css);
 @import url(../blocks/html-link/html-link.css);
 @import url(../blocks/body/body.css);
 

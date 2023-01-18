@@ -16,19 +16,20 @@
       />
       <ul class="languages">
         <li>
-          <a href="" class="languages__link languages__link_current">Ru</a>
+          <!-- добавил микс-классов, но какой смысл показывать пользователю, что это активная ссылка, если она ведет на действующую страницу? -->
+          <a href="#" target="_self" hreflang="ru" class="languages__link languages__link_current html-link">Ru</a>
         </li>
         <li>
-          <a href="" class="languages__link html-link">En</a>
+          <a href="#" target="_self" hreflang="en" class="languages__link html-link">En</a>
         </li>
       </ul>
     </header>
     <main class="main">
       <section class="lead">
         <h1 class="lead__title">Путешествия по России</h1>
-        <h2 class="lead__subtitle">
+        <p class="lead__subtitle">
           Настоящая страна не в выпусках новостей, а здесь.
-        </h2>
+        </p>
         <figure class="figure">
           <div class="figure__img-overlay">
             <img
@@ -42,7 +43,7 @@
           </figcaption>
         </figure>
       </section>
-      <article class="intro">
+      <section class="intro">
         <h2 class="intro__title">Чего мы там не видели?</h2>
         <p class="intro__main-text">
           По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только
@@ -74,7 +75,7 @@
             Аэропортов <span class="intro__num">241</span>
           </li>
         </ul>
-      </article>
+      </section>
       <section class="photo-grid">
         <img
           src="./images/photo-grid/__item.png"
@@ -144,6 +145,7 @@
             <span class="places__link-text">URL</span>
             <a
               href="http://park-kosa.ru"
+              hreflang="ru"
               class="places__link html-link"
               target="_blank"
               >park-kosa.ru</a
@@ -177,6 +179,7 @@
             <span class="places__link-text">URL</span>
             <a
               href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
+              hreflang="en"
               class="places__link html-link"
               target="_blank"
               >National Geographic</a
@@ -210,6 +213,7 @@
             <span class="places__link-text">URL</span>
             <a
               href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
+              hreflang="en"
               class="places__link html-link"
               target="_blank"
               >Facebook</a
@@ -242,6 +246,7 @@
             <span class="places__link-text">URL</span>
             <a
               href="https://vk.com/baikalmile"
+              hreflang="ru"
               class="places__link html-link"
               target="_blank"
               >https://vk.com/baikalmile</a
@@ -273,6 +278,7 @@
             <span class="places__link-text">URL</span>
             <a
               href="http://vodlozero.ru"
+              hreflang="ru"
               class="places__link html-link"
               target="_blank"
               >http://vodlozero.ru/</a
@@ -302,6 +308,7 @@
         <h2 class="cover__title">
           <a
             href="https://stampsy.com/na-elektrichkakh-do-baikala"
+            hreflang="ru"
             class="cover__link html-link"
             target="_blank"
             >До Байкала «на собаках»</a
@@ -317,30 +324,35 @@
       <nav class="footer__row-links">
         <a
           href="https://yandex.ru/maps"
+          hreflang="ru"
           class="footer__row-link html-link"
           target="_blank"
           >Карты</a
         >
         <a
           href="https://yandex.ru/pogoda"
+          hreflang="ru"
           class="footer__row-link html-link"
           target="_blank"
           >Погода</a
         >
         <a
           href="https://rasp.yandex.ru"
+          hreflang="ru"
           class="footer__row-link html-link"
           target="_blank"
           >Расписание</a
         >
         <a
           href="https://calendar.yandex.ru"
+          hreflang="ru"
           class="footer__row-link html-link"
           target="_blank"
           >Календарь</a
         >
         <a
           href="https://travel.yandex.ru"
+          hreflang="ru"
           class="footer__row-link html-link"
           target="_blank"
           >Путешествия</a
