@@ -1,4 +1,4 @@
-.languages__link_current {
+.header__languages-link_current {
   /* underline не похоже на бриф */
   border-bottom: 2px solid #fff;
   /* text-decoration: underline; */

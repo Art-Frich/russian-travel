@@ -1,12 +1,30 @@
 .cover__link {
-  /* видимо или z-index, или вырывать элемент из потока*/
+  /* для позиционирования подложки */
   position: relative;
+  width: 100%;
+  height: 100%;
+
   text-decoration: none;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 72px;
-  line-height: 1.06;
   color: #fff;
+
+  /* позиционирование контента блока, т.к. весь контент завернут в <a> */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* темный фон */
+.cover__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2a2c2f;
+  opacity: 0.3;
+  transition: opacity 0.3s linear;
 }
 
 @media screen and (max-width: 656px) {

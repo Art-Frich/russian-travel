@@ -1,4 +1,4 @@
-.languages__link {
+.header__languages-link {
   /* для того, чтобы работало height = border */
   display: inline-block;
   /* параметра служит для регулировки удаленности border от символа*/
@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 656px) {
-  .languages__link {
+  .header__languages-link {
     height: 24px;
     font-size: 22.5px;
     line-height: 1.155;
@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width: 544px) {
-  .languages__link {
+  .header__languages-link {
     height: 22.5px;
     font-size: 21px;
     line-height: 1.14;
@@ -29,7 +29,7 @@
 }
 
 @media screen and (max-width: 432px) {
-  .languages__link {
+  .header__languages-link {
     height: 21px;
     font-size: 19.5px;
     line-height: 1.125;
@@ -37,7 +37,7 @@
 }
 
 @media screen and (max-width: 320px) {
-  .languages__link {
+  .header__languages-link {
     /* адаптируем подчеркивание */
     height: 19.5px;
     font-size: 18px;

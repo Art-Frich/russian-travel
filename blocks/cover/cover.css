@@ -1,7 +1,7 @@
 .cover {
   grid-area: cover;
 
-  position: relative;
+  /* position: relative; */
   /* центрирование блока */
   justify-self: center;
   align-self: center;
@@ -9,18 +9,14 @@
   width: 100%;
   max-width: 1184px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   aspect-ratio: 1.6;
   background-image: url(../../images/__background.png);
   background-size: cover;
   background-position: center;
 }
 
-.cover:hover > .cover__title::before {
+/* видимость подложки при наведении */
+.cover:hover > .cover__link::before {
   opacity: 0.8;
 }
 

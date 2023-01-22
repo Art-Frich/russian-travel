@@ -1,4 +1,4 @@
-.figure {
+.lead__figure {
   margin: calc(64px - 8*(984px - 100%)/56) 0 0;
   /* убрать пробел между элементами */
   font-size: 0;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .figure {
+  .lead__figure {
     margin-top: 56px;
   }
 }

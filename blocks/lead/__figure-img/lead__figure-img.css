@@ -1,28 +1,28 @@
-:root {
+/* :root {
  --min-width_768-320: calc(768px - 448*(720px - 100%)/432);
-}
+} */
 
-.figure__img {
+.lead__figure-img {
   width: 100%;
   aspect-ratio: 16/10;
 }
 
 
 @media screen and (max-width: 827px) {
-  .figure__img {
-    position: absolute;
-    min-width: 768px; 
+  .lead__figure-img {
+    /* position: absolute; */
+    /* min-width: 768px;  */
     /* -24 смещение влево
     767.45 - ширина родителя при 826 px (почему-то media на 827 начинает работать только на 826)
     720 - конечная ширина окна */
-    left: calc(-24*(767.45px - 100%)/(767.45 - 720));
+    /* left: calc(-24*(767.45px - 100%)/(767.45 - 720)); */
   }
 }
 
 @media screen and (max-width: 768px) {
-  .figure__img {
-    min-width: var(--min-width_768-320);
+  .lead__figure-img {
+    /* min-width: var(--min-width_768-320); */
     /* постепенно меняет отступ с -24 до -16 */
-    left: calc(-24px + 8*(719.25px - 100%)/(719.25 - 288));
+    /* left: calc(-24px + 8*(719.25px - 100%)/(719.25 - 288)); */
   }
 }

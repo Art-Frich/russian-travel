@@ -34,7 +34,7 @@
   grid-template-areas: 
   ". . lead . ."
   ". . intro . ."
-  ". photo-grid photo-grid photo-grid ."
+  ". images images images ."
   ". . places . ."
   "cover cover cover cover cover";
   
@@ -88,7 +88,7 @@
     grid-template-areas: 
     ". . lead . ."
     ". . intro . ."
-    ". photo-grid photo-grid photo-grid ."
+    ". images images images ."
     "places places places places places"
     "cover cover cover cover cover";
     /* удивительно, но без этого, происходили фокусы: ширина рассчитывалась по max-content, но ужималась настройками внутри places => расчётная высота блока 5077 (примерно), а фактическая 5177 (залезала на соседний блок). Теперь он будет оперировать и min-content, поэтому подгонит высоту как надо */
