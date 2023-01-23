@@ -1,5 +1,7 @@
 /* Стили для всей страницы */
 @import url(../vendor/normalize.css);
+@import url(../vendor/variables.css);
+@import url(../vendor/fonts/fonts.css);
 @import url(../blocks/html-link/html-link.css);
 @import url(../blocks/html-ul-normalize/html-ul-normalize.css);
 @import url(../blocks/body/body.css);
@@ -22,7 +24,7 @@
 @import url(../blocks/lead/__title/lead__title.css);
 @import url(../blocks/lead/__subtitle/lead__subtitle.css);
 @import url(../blocks/lead/__figure/lead__figure.css);
-@import url(../blocks/lead/__figure-img/lead__figure-img.css);
+@import url(../blocks/lead/__figure-img/lead__figure-img.css); /*остались лишние блоки кода*/
 @import url(../blocks/lead/__figure-figcaption/lead__figure-figcaption.css);
 
 /* Блок intro */

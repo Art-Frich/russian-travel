@@ -1,5 +1,6 @@
 .cover__text {
-  margin: 32px 0 0;
+  /* обнуляем встроенные браузером отступы */
+  margin: 0;
   max-width: 360px;
   
   text-align: center;
@@ -7,14 +8,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
-  /* чтобы текст не затемнялся подложкой */
-  z-index: 2;
-}
-
-@media screen and (max-width: 768px) {
-  .cover__text {
-    margin-top: calc(32px - 16*(768px - 100%)/448);
-  }
 }
 
 @media screen and (max-width: 656px) {

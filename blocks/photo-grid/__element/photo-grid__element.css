@@ -1,4 +1,8 @@
 .photo-grid__element {
+  /* гарантия отсутствия случайных отступов от браузера у img */
+  display: block;
+  
   width: 100%;
-  aspect-ratio: calc(284/213);
+  aspect-ratio: 284 / 213;
+  object-fit: cover;
 }

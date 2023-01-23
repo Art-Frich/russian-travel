@@ -1,36 +1,3 @@
-@font-face {
-  font-family: 'Inter';
-  src: 
-    url(../../vendor/InterWeb/Inter-Regular.woff2),
-    url(../../vendor/InterWeb/Inter-Regular.woff);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: 
-    url(../../vendor/InterWeb/Inter-Bold.woff2),
-    url(../../vendor/InterWeb/Inter-Bold.woff);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: 
-    url(../../vendor/InterWeb/Inter-Black.woff2),
-    url(../../vendor/InterWeb/Inter-Black.woff);
-  font-weight: 900;
-}
-
-:root {
-  /* 48 - исходное значение
-  24 - разность вычисляемого значения
-  1024 - начальная ширина экрана
-  256 - разность ширины экрана */
-  --margin-left-right_1024-768: calc(48px - 24*(1024px - 100%)/256);
-  --margin-left-right_768-320: calc(24px - 8*(768px - 100%)/448);
-}
-
 .body {
   /* упростим работу с отступами и сделаем страничку через grid */
   display: grid;
@@ -64,7 +31,7 @@
   text-rendering: optimizeLegibility;
 
   /* для плавности загрузки и всех незаданных явно изменений */
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 @media screen and (max-width: 1024px) {

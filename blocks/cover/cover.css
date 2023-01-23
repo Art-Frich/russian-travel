@@ -8,16 +8,6 @@
   /* сочетание свойств отвечает за адаптивность cover*/
   width: 100%;
   max-width: 1184px;
-
-  aspect-ratio: 1.6;
-  background-image: url(../../images/__background.png);
-  background-size: cover;
-  background-position: center;
-}
-
-/* видимость подложки при наведении */
-.cover:hover > .cover__link::before {
-  opacity: 0.8;
 }
 
 /* костыль, чтобы соответствовало макету, хотя кажется, что дизайнер просто промазал или решил усложнить */

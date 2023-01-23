@@ -3,8 +3,12 @@
 } */
 
 .lead__figure-img {
+  /* гарантия отсутствия случайных отступов от браузера у img */
+  display: block;
+  
   width: 100%;
-  aspect-ratio: 16/10;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
 }
 
 

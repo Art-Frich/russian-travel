@@ -1,10 +1,26 @@
+/* комментарий к затемнению
+
+мы пишем z-index: -1 для before, чтобы достать его из под всех блоков, т.к. background для absolute стоит ниже background relative?
+
+Если так, то мы его достали, но теперь он поверх всего, потому что
+z-index: -1 все равно будет выше, чем z-index: auto, который.... НАСЛЕДУЕТСЯ ТЕКСТОВЫМИ БЛОКАМИ?
+
+Поэтому мы явно задаем блоку cover__link z-index: 0 и теперь наследуемый текстовыми блоками z-index = 0, before -1 и никакое auto не задает непонятного поведения... Но background image не наследуте z-index = 0, ведь оно по прежнему ПОД z-index: -1, а значит...
+
+Видимость для пользователя (от первого, что он увидит, до самого низа стопки):
+1. z-index >= 0*
+2. z-index < 0
+3. z-index = auto
+4. background-image main
+5. background-image main:before/after */
+
 .cover__link {
   /* для позиционирования подложки */
   position: relative;
   width: 100%;
   height: 100%;
+  z-index: 0;
 
-  text-decoration: none;
   color: #fff;
 
   /* позиционирование контента блока, т.к. весь контент завернут в <a> */
@@ -12,6 +28,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 32px;
+
+  background: url(../../../images/__background.png) no-repeat center / cover;
+  aspect-ratio: 16 / 10;
+}
+
+/* для нивелирования затемнения текста при наведении на блок от html-link */
+.cover__link:hover {
+  opacity: 1;
 }
 
 /* темный фон */
@@ -22,34 +47,19 @@
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -1;
+
   background-color: #2a2c2f;
   opacity: 0.3;
   transition: opacity 0.3s linear;
 }
 
-@media screen and (max-width: 656px) {
-  .cover__link {
-    font-size: 62px;
-    line-height: 1.07;
-  }
+.cover__link:hover::before {
+  opacity: 0.8;
 }
 
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 639.92px) {
   .cover__link {
-    font-size: 52px;
-    line-height: 1.08;
-  }
-}
-
-@media screen and (max-width: 432px) {
-  .cover__link {
-    font-size: 42px;
-    line-height: 1.09;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .cover__link {
-    font-size: 32px;
+    gap: 16px;
   }
 }
