@@ -35,13 +35,6 @@
   }
 }
 
-/* костыль для более плавной смены */
-@media screen and (max-width: 896px) {
-  .main {
-    row-gap: 90px;
-  }
-}
-
 @media screen and (max-width: 827px) {
   .main {
     grid-template-areas: 
@@ -68,12 +61,6 @@
   }
 }
 
-@media screen and (max-width: 656px) {
-  .main {
-    row-gap: 80px;
-  }
-}
-
 @media screen and (max-width: 639.92px) {
   .main {
     grid-template-areas: 
@@ -84,12 +71,7 @@
     "cover cover cover cover cover";
     /* удивительно, но без этого, происходили фокусы: ширина рассчитывалась по max-content, но ужималась настройками внутри places => расчётная высота блока 5077 (примерно), а фактическая 5177 (залезала на соседний блок). Теперь он будет оперировать и min-content, поэтому подгонит высоту как надо */
     grid-template-rows: repeat(5, minmax(min-content, max-content));
-  }
-}
-
-@media screen and (max-width: 544px) {
-  .main {
-    row-gap: 72px;
+    row-gap: 76px;
   }
 }
 

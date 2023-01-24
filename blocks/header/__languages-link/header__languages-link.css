@@ -6,24 +6,10 @@
   color: #fff;
 }
 
-@media screen and (max-width: 656px) {
-  .header__languages-link {
-    font-size: 22.5px;
-    line-height: 1.155;
-  }
-}
-
 @media screen and (max-width: 544px) {
   .header__languages-link {
     font-size: 21px;
     line-height: 1.14;
-  }
-}
-
-@media screen and (max-width: 432px) {
-  .header__languages-link {
-    font-size: 19.5px;
-    line-height: 1.125;
   }
 }
 

@@ -1,5 +1,6 @@
 .lead__title {
-  margin: 0;
+  /* 16 px нужны для того, чтобы на переходе 600-620 произошел сброс "по" на вторую строку раньше, чем "по" упрется в границу ширины экрана. Проще говоря, из эстетический побуждений*/
+  margin: 0 16px;
   max-width: 720px;
   font-style: normal;
   font-size: 96px;
@@ -11,37 +12,11 @@
 @media screen and (max-width: 827px) {
   .lead__title {
     grid-area: text;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .lead__title {
-    font-size: 88px;
-  }
-}
-
-@media screen and (max-width: 656px) {
-  .lead__title {
-    font-size: 75px;
-    line-height: 1.055;
+    font-size: 68px;
   }
 }
 
 @media screen and (max-width: 544px) {
-  .lead__title {
-    font-size: 65px;
-    line-height: 1.07;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .lead__title {
-    max-width: 440px;
-    font-size: 52px;
-  }
-}
-
-@media screen and (max-width: 432px) {
   .lead__title {
     max-width: 288px;
     font-size: 40px;

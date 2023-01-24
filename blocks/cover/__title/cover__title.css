@@ -11,26 +11,12 @@
 
 @media screen and (max-width: 656px) {
   .cover__title {
-    font-size: 62px;
-    line-height: 1.07;
-  }
-}
-
-@media screen and (max-width: 544px) {
-  .cover__title {
     font-size: 52px;
     line-height: 1.08;
   }
 }
 
 @media screen and (max-width: 432px) {
-  .cover__title {
-    font-size: 42px;
-    line-height: 1.09;
-  }
-}
-
-@media screen and (max-width: 320px) {
   .cover__title {
     max-width: 250px;
     font-size: 32px;
