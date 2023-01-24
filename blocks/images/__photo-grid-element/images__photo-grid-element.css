@@ -1,4 +1,4 @@
-.photo-grid__element {
+.images__photo-grid-element {
   /* гарантия отсутствия случайных отступов от браузера у img */
   display: block;
   

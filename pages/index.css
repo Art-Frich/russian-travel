@@ -4,7 +4,7 @@
 @import url(../vendor/variables.css);
 @import url(../vendor/fonts/fonts.css);
 @import url(../blocks/html-link/html-link.css);
-@import url(../blocks/html-ul-normalize/html-ul-normalize.css);
+@import url(../blocks/html-ul/html-ul.css);
 @import url(../blocks/body/body.css);
 
 
@@ -38,8 +38,8 @@
 
 /* Блок photo-grid */
 @import url(../blocks/images/images.css);
-@import url(../blocks/photo-grid/photo-grid.css);
-@import url(../blocks/photo-grid/__element/photo-grid__element.css);
+@import url(../blocks/images/__photo-grid/images__photo-grid.css);
+@import url(../blocks/images/__photo-grid-element/images__photo-grid-element.css);
 
 /* Блок places */
 @import url(../blocks/places/places.css);

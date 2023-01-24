@@ -3,7 +3,8 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
-  letter-spacing: 0.2em;
+  /* нашел расхождения web-макета и макета, доступного по ссылке для desktop версии. В desktop стоит 0.2em, а в web 2px. */
+  letter-spacing: 2px;
   color: #aaa;
   text-transform: uppercase;
 }
