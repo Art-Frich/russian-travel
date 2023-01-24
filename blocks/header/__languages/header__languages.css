@@ -1,0 +1,19 @@
+.header__languages {
+  display: flex;
+  flex-direction: row;
+  column-gap: 18px;
+  /* без padding не смог выравнять по макету, положение очень специфичное получилось для flex */
+  padding: 18px 0 0;
+}
+
+@media screen and (max-width: 544px) {
+  .header__languages {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__languages {
+    padding-top: 14px;
+  }
+}

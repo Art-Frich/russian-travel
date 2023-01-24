@@ -1,14 +1,15 @@
-.places__picture {
+.lead__figure-img {
   /* гарантия отсутствия случайных отступов от браузера у img */
   display: block;
   
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
 }
 
-@media screen and (max-width: 639.92px) {
-  .places__picture {
-    grid-area: places__picture;
+@media screen and (max-width: 827px) {
+  .lead__figure-img {
+    max-width: 768px;
+    margin: 0 auto;
   }
 }

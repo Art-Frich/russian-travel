@@ -1,6 +1,0 @@
-.languages__link_current {
-  /* underline не похоже на бриф */
-  border-bottom: 2px solid #fff;
-  /* text-decoration: underline; */
-  /* Всё рвыно немного не то. Мб relative поможет, но кажется уже чрезвычайно костыльным решением. Растерян */
-}

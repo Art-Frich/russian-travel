@@ -1,3 +1,15 @@
+.places__main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+@media screen and (max-width: 768px) {
+  .places__main-text{
+    gap: 25px;
+  }
+}
+
 @media screen and (max-width: 639.92px) {
   .places__main-text {
     grid-area: places__main-text;

@@ -2,7 +2,14 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1;
+  line-height: 1.7;
   letter-spacing: 0.2em;
   color: #aaa;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 896px) {
+  .places__link-text {
+    line-height: 1;
+  }
 }

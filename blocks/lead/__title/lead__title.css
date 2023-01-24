@@ -8,6 +8,12 @@
   font-weight: 900;
 }
 
+@media screen and (max-width: 827px) {
+  .lead__title {
+    grid-area: text;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .lead__title {
     font-size: 88px;

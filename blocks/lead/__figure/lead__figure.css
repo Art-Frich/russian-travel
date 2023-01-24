@@ -1,0 +1,19 @@
+.lead__figure {
+  margin: calc(64px - 8*(984px - 100%)/56) 0 0;
+  /* убрать пробел между элементами */
+  font-size: 0;
+  /* чтобы при игре с абсолютной позицией блок не ужимался по содержимому, которого станет меньше */
+  min-width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .lead__figure {
+    margin-top: 56px;
+  }
+}
+
+@media screen and (max-width: 639.92px) {
+  .lead__figure {
+    margin-top: 40px;
+  }
+}
