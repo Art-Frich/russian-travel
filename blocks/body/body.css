@@ -52,28 +52,9 @@
   }
 }
 
-@media screen and (max-width: 700px) {
-  .body {
-    grid-template-rows: 28px 52px 1fr 310px 24px;
-  }
-}
-
-
-@media screen and (max-width: 656px) {
-  .body {
-    grid-template-rows: 25px 49.5px 1fr 310px 24px;
-  }
-}
-
 @media screen and (max-width: 544px) {
   .body {
     grid-template-rows: 22px 47px 1fr 310px 24px;
-  }
-}
-
-@media screen and (max-width: 432px) {
-  .body {
-    grid-template-rows: 19px 44.5px 1fr 310px 24px;
   }
 }
 
