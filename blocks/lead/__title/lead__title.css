@@ -12,7 +12,12 @@
 @media screen and (max-width: 827px) {
   .lead__title {
     grid-area: text;
-    font-size: 68px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .lead__title {
+    font-size: 60px;
   }
 }
 

@@ -1,4 +1,4 @@
-.photo-grid {
+.images__photo-grid {
   display: grid;
   /* центрирует в промежуточных положениях */
   justify-content: center;
@@ -7,19 +7,19 @@
 }
 
 @media screen and (width: 1024px) {
-  .photo-grid {
+  .images__photo-grid {
     gap: 14px;
   }
 }
 
 @media screen and (width: 768px) {
-  .photo-grid {
+  .images__photo-grid {
     gap: 16px;
   }
 }
 
 @media screen and (width: 320px) {
-  .photo-grid {
+  .images__photo-grid {
     gap: 12px;
   }
 }

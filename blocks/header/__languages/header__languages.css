@@ -3,7 +3,7 @@
   flex-direction: row;
   column-gap: 18px;
   /* без padding не смог выравнять по макету, положение очень специфичное получилось для flex */
-  padding: 18px 0 0;
+  margin-top: 18px;
 }
 
 @media screen and (max-width: 544px) {

@@ -12,10 +12,6 @@
 @media screen and (max-width: 827px) {
   .lead__subtitle {
     grid-area: text;
-    margin-top: 26px;
-    max-width: 520px;
-    font-size: 26.5px;
-    line-height: 1.2125;
   }
 }
 
