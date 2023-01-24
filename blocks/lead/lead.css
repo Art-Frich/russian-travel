@@ -4,13 +4,3 @@
   flex-direction: column;
   align-items: center;
 }
-
-/* @media screen and (max-width: 827px) {
-  .main {
-    display: grid;
-    grid-template-areas: 
-    ". text ."
-    "figimg figimg figimg"
-    ". figcaption .";
-  }
-} */

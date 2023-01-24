@@ -9,3 +9,15 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 827px) {
+  .lead__figure-figcaption {
+    margin: 8px var(--margin-left-right_48-24) 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead__figure-figcaption {
+    margin: 8px var(--margin-left-right_24-16) 0;
+  }
+}
