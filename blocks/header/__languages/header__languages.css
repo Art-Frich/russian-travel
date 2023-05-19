@@ -8,12 +8,12 @@
 
 @media screen and (max-width: 544px) {
   .header__languages {
-    padding-top: 16px;
+    margin-top: 16px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .header__languages {
-    padding-top: 14px;
+    margin-top: 14px;
   }
 }
